@@ -1,16 +1,39 @@
-Key Features:
-Easy installation: Install via pip with just one command - pip install gTTS.
-Multi-language support: Convert text to speech in multiple languages including English, Spanish, French, German, Italian, Dutch, Russian, Chinese, Japanese, Korean, Portuguese, Arabic, Turkish, Polish, Danish, Finnish, Greek, Hungarian, Indonesian, Romanian, Slovak, Thai, Vietnamese, Czech, Norwegian, Swedish, Ukrainian, Bulgarian, Croatian, Catalan, Filipino, Hebrew, Icelandic, Lithuanian, Latvian, Slovenian, Swahili, Taiwanese Mandarin, Hindi, Bengali, Telugu, Urdu, Malayalam, Sinhala, Tamil, Kannada, Gujarati, Marathi, Nepali, Punjabi, Lao, Mongolian, Persian, Serbian Cyrillic, and many more!
-Multiple voice options: Select from different available voices based on gender or language preference.
-Customizable speed and volume: Set custom speaking rate and volume level according to your requirements.
-Save as MP3 or WAV file: Export generated audio as either an .mp3 or .wav format for further usage.
-Convenient CLI tool: Use the included Command Line Interface tool to easily convert plaintext to audio without any programming required.
+# Arabic Text-to-Speech with gTTS 🔊🇸🇦
 
+[![Language](https://img.shields.io/badge/Language-Python%20%7C%20Jupyter-blue)](https://github.com/aeleraqi/Text-to-Speech-gTTS---Arabic-text)
+[![Stars](https://img.shields.io/github/stars/aeleraqi/Text-to-Speech-gTTS---Arabic-text?style=social)](https://github.com/aeleraqi/Text-to-Speech-gTTS---Arabic-text/stargazers)
 
-Getting Started:
-Clone this repository or simply install it through pip by running pip install gtts
-Import the library in your python script: from gtts import gTTS
-Prepare your text content, target language, and desired filename
-Generate the speech object with specified parameters
-Save the resulting audio file with preferred encoding
-Enjoy the AI-generated human-like voice output!
+Convert **Arabic text** to natural-sounding speech using Google's Text-to-Speech (gTTS) API.
+
+## 📖 About
+
+This notebook demonstrates how to use the `gTTS` Python library to convert Arabic text into downloadable MP3 audio files. Supports MSA and various Arabic scripts with proper RTL handling.
+
+## ✨ Features
+
+- Convert any Arabic text input to speech
+- Generate downloadable MP3 audio files
+- Supports Arabic (ar), Egyptian Arabic, and more
+- Adjustable speech speed (slow/normal)
+- Batch processing for multiple inputs
+
+## 🚀 Getting Started
+
+```bash
+pip install gtts
+```
+
+## 💡 Usage
+
+```python
+from gtts import gTTS
+
+text = "مرحباً بكم في عالم معالجة اللغة العربية"
+tts = gTTS(text=text, lang='ar')
+tts.save("arabic_speech.mp3")
+```
+
+---
+**Author:** [Amr Eleraqi](https://github.com/aeleraqi) — Data Analyst | NLP Specialist | Machine Learning Expert | Educator  
+**Affiliation:** Toronto Metropolitan University, Ontario, Canada  
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0003--0935--0026-brightgreen)](https://orcid.org/0000-0003-0935-0026) [![GitHub](https://img.shields.io/github/followers/aeleraqi?label=Follow&style=social)](https://github.com/aeleraqi)
